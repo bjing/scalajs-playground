@@ -5,7 +5,7 @@ name := "Scala.js Tutorial"
 scalaVersion := "2.12.15" // or any other Scala version >= 2.11.12
 
 // This is an application with a main method
-scalaJSUseMainModuleInitializer := true
+//scalaJSUseMainModuleInitializer := true
 
 // ECMAScript
 //scalaJSLinkerConfig ~= { _.withModuleKind(ModuleKind.ESModule) }
