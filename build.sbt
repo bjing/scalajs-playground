@@ -1,13 +1,13 @@
 enablePlugins(ScalaJSPlugin)
 enablePlugins(ScalaJSBundlerPlugin)
 
-name := "Scala.js Tutorial"
+name := "Scala.js Playground"
 scalaVersion := "2.12.15" // or any other Scala version >= 2.11.12
 
 // This is an application with a main method
 //scalaJSUseMainModuleInitializer := true
 
-// ECMAScript
+// ECMAScript, not supported in ScalaJSBundle
 //scalaJSLinkerConfig ~= { _.withModuleKind(ModuleKind.ESModule) }
 // CommonJS
 scalaJSLinkerConfig ~= { _.withModuleKind(ModuleKind.CommonJSModule) }
@@ -19,3 +19,4 @@ scalaJSLinkerConfig ~= { _.withModuleKind(ModuleKind.CommonJSModule) }
 // the following config is required
 webpackBundlingMode := BundlingMode.LibraryAndApplication()
 
+//Compile / npmDependencies += "snabbdom" -> "3.1.0"
