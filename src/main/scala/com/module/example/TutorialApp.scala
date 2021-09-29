@@ -1,4 +1,4 @@
-package tutorial.webapp
+package com.module.example
 
 object TutorialApp {
   def main(args: Array[String]): Unit = {
